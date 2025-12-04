@@ -24,7 +24,7 @@ export function OrbInterface({ useCase, onBack }: OrbInterfaceProps) {
     // Initiate phone call to the AI agent
     const phoneNumber = "+34911676409" // +34 911 67 64 09
     window.location.href = `tel:${phoneNumber}`
-    
+
     setIsCallActive(true)
     setAgentState("listening")
     // Simulate voice interaction
@@ -104,14 +104,14 @@ export function OrbInterface({ useCase, onBack }: OrbInterfaceProps) {
       <div className="flex flex-1 items-center justify-center p-8 bg-gradient-to-b from-background to-muted/20">
         <div className="flex w-full max-w-4xl flex-col items-center gap-8 animate-in fade-in duration-500">
           {/* Orb Container */}
-          <div className="relative h-[500px] w-full max-w-[500px] animate-in zoom-in-95 duration-700">
+          <div className="relative h-[350px] w-full max-w-[350px] animate-in zoom-in-95 duration-700">
             <Orb
               agentState={agentState}
               volumeMode="manual"
               inputVolumeRef={inputVolumeRef}
               outputVolumeRef={outputVolumeRef}
               colors={getColorsForUseCase(useCase)}
-              className="h-full w-full"
+              className="h-full w-full max-w-[350px] max-h-[350px]"
             />
           </div>
 

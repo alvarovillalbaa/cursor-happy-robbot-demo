@@ -30,7 +30,7 @@ export default function Home() {
           {/* Hero Section */}
           <div className="mb-16 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-              Logistics Voice Assistant
+              Logistics Voice Assistant: Free your Hands
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
               Track drivers, warehouse operators, and shipments across your supply chain with AI-powered voice assistance.
