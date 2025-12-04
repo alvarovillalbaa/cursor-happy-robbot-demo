@@ -1,0 +1,486 @@
+{
+  "packages": [
+    {
+      "id": "123",
+      "trackingNumber": "TRK123456789",
+      "sender": {
+        "name": "TechCorp Solutions",
+        "address": "123 Business Park, San Francisco, CA 94102",
+        "phone": "+1-415-555-0101"
+      },
+      "recipient": {
+        "name": "John Martinez",
+        "address": "456 Oak Street, Apt 3B, San Francisco, CA 94110",
+        "phone": "+1-415-555-0202"
+      },
+      "weight": 2.5,
+      "dimensions": {
+        "length": 30,
+        "width": 20,
+        "height": 15,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "standard",
+      "serviceType": "express",
+      "estimatedDelivery": "2024-01-15T14:00:00Z",
+      "createdAt": "2024-01-12T08:30:00Z",
+      "description": "Electronics - Laptop",
+      "value": 1299.99,
+      "requiresSignature": true,
+      "fragile": true,
+      "insurance": true
+    },
+    {
+      "id": "PKG-002",
+      "trackingNumber": "TRK123456790",
+      "sender": {
+        "name": "Fashion Boutique",
+        "address": "789 Market Street, San Francisco, CA 94103",
+        "phone": "+1-415-555-0303"
+      },
+      "recipient": {
+        "name": "Sarah Johnson",
+        "address": "321 Pine Avenue, San Francisco, CA 94111",
+        "phone": "+1-415-555-0404"
+      },
+      "weight": 1.2,
+      "dimensions": {
+        "length": 40,
+        "width": 30,
+        "height": 10,
+        "unit": "cm"
+      },
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-15T16:00:00Z",
+      "createdAt": "2024-01-13T10:15:00Z",
+      "description": "Clothing - Winter Collection",
+      "value": 245.50,
+      "requiresSignature": false,
+      "fragile": false,
+      "insurance": false
+    },
+    {
+      "id": "PKG-003",
+      "trackingNumber": "TRK123456791",
+      "sender": {
+        "name": "BookStore Online",
+        "address": "234 Library Lane, Oakland, CA 94601",
+        "phone": "+1-510-555-0505"
+      },
+      "recipient": {
+        "name": "Michael Chen",
+        "address": "567 Elm Street, Berkeley, CA 94704",
+        "phone": "+1-510-555-0606"
+      },
+      "weight": 0.8,
+      "dimensions": {
+        "length": 25,
+        "width": 18,
+        "height": 5,
+        "unit": "cm"
+      },
+      "status": "delivered",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-14T12:00:00Z",
+      "actualDelivery": "2024-01-14T11:45:00Z",
+      "createdAt": "2024-01-10T09:00:00Z",
+      "description": "Books - Fiction Collection",
+      "value": 89.99,
+      "requiresSignature": false,
+      "fragile": false,
+      "insurance": false,
+      "deliveredTo": "Front door",
+      "deliveryNotes": "Left at front door as requested"
+    },
+    {
+      "id": "PKG-004",
+      "trackingNumber": "TRK123456792",
+      "sender": {
+        "name": "PharmaSupply Inc",
+        "address": "890 Medical Center Drive, San Jose, CA 95128",
+        "phone": "+1-408-555-0707"
+      },
+      "recipient": {
+        "name": "Dr. Emily Rodriguez",
+        "address": "123 Health Clinic, Mountain View, CA 94040",
+        "phone": "+1-650-555-0808"
+      },
+      "weight": 5.0,
+      "dimensions": {
+        "length": 50,
+        "width": 40,
+        "height": 30,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "high",
+      "serviceType": "express",
+      "estimatedDelivery": "2024-01-15T10:00:00Z",
+      "createdAt": "2024-01-14T07:00:00Z",
+      "description": "Medical Supplies - Temperature Controlled",
+      "value": 1250.00,
+      "requiresSignature": true,
+      "fragile": true,
+      "insurance": true,
+      "temperatureControlled": true,
+      "minTemperature": 2,
+      "maxTemperature": 8
+    },
+    {
+      "id": "PKG-005",
+      "trackingNumber": "TRK123456793",
+      "sender": {
+        "name": "Home Decor Plus",
+        "address": "456 Design Avenue, San Francisco, CA 94105",
+        "phone": "+1-415-555-0909"
+      },
+      "recipient": {
+        "name": "Robert Williams",
+        "address": "789 Sunset Boulevard, San Francisco, CA 94117",
+        "phone": "+1-415-555-1010"
+      },
+      "weight": 12.5,
+      "dimensions": {
+        "length": 80,
+        "width": 60,
+        "height": 40,
+        "unit": "cm"
+      },
+      "status": "pending",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-16T17:00:00Z",
+      "createdAt": "2024-01-14T14:20:00Z",
+      "description": "Furniture - Table Lamp",
+      "value": 199.99,
+      "requiresSignature": false,
+      "fragile": true,
+      "insurance": true
+    },
+    {
+      "id": "PKG-006",
+      "trackingNumber": "TRK123456794",
+      "sender": {
+        "name": "Gourmet Foods Co",
+        "address": "321 Food Street, Napa, CA 94558",
+        "phone": "+1-707-555-1111"
+      },
+      "recipient": {
+        "name": "Lisa Anderson",
+        "address": "654 Wine Country Road, Sonoma, CA 95476",
+        "phone": "+1-707-555-1212"
+      },
+      "weight": 3.2,
+      "dimensions": {
+        "length": 35,
+        "width": 25,
+        "height": 20,
+        "unit": "cm"
+      },
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-15T15:30:00Z",
+      "createdAt": "2024-01-13T11:00:00Z",
+      "description": "Food - Gourmet Gift Basket",
+      "value": 149.99,
+      "requiresSignature": false,
+      "fragile": true,
+      "insurance": false,
+      "perishable": true
+    },
+    {
+      "id": "PKG-007",
+      "trackingNumber": "TRK123456795",
+      "sender": {
+        "name": "TechGadgets Pro",
+        "address": "987 Innovation Way, Palo Alto, CA 94301",
+        "phone": "+1-650-555-1313"
+      },
+      "recipient": {
+        "name": "David Kim",
+        "address": "147 Tech Park Drive, Menlo Park, CA 94025",
+        "phone": "+1-650-555-1414"
+      },
+      "weight": 0.5,
+      "dimensions": {
+        "length": 15,
+        "width": 10,
+        "height": 3,
+        "unit": "cm"
+      },
+      "status": "delivered",
+      "priority": "high",
+      "serviceType": "express",
+      "estimatedDelivery": "2024-01-14T13:00:00Z",
+      "actualDelivery": "2024-01-14T12:30:00Z",
+      "createdAt": "2024-01-13T08:00:00Z",
+      "description": "Electronics - Smart Watch",
+      "value": 399.99,
+      "requiresSignature": true,
+      "fragile": true,
+      "insurance": true,
+      "deliveredTo": "Recipient",
+      "deliveryNotes": "Signed by recipient"
+    },
+    {
+      "id": "PKG-008",
+      "trackingNumber": "TRK123456796",
+      "sender": {
+        "name": "Art Supplies Warehouse",
+        "address": "258 Creative Boulevard, San Francisco, CA 94108",
+        "phone": "+1-415-555-1515"
+      },
+      "recipient": {
+        "name": "Jennifer Taylor",
+        "address": "369 Artist Lane, San Francisco, CA 94115",
+        "phone": "+1-415-555-1616"
+      },
+      "weight": 4.5,
+      "dimensions": {
+        "length": 45,
+        "width": 35,
+        "height": 25,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-16T11:00:00Z",
+      "createdAt": "2024-01-14T09:30:00Z",
+      "description": "Art Supplies - Paint Set",
+      "value": 179.99,
+      "requiresSignature": false,
+      "fragile": true,
+      "insurance": false
+    },
+    {
+      "id": "PKG-009",
+      "trackingNumber": "TRK123456797",
+      "sender": {
+        "name": "Pet Supplies Direct",
+        "address": "741 Animal Care Road, San Francisco, CA 94109",
+        "phone": "+1-415-555-1717"
+      },
+      "recipient": {
+        "name": "Thomas Brown",
+        "address": "852 Pet Friendly Street, San Francisco, CA 94112",
+        "phone": "+1-415-555-1818"
+      },
+      "weight": 8.0,
+      "dimensions": {
+        "length": 60,
+        "width": 40,
+        "height": 30,
+        "unit": "cm"
+      },
+      "status": "delayed",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-15T12:00:00Z",
+      "originalEstimatedDelivery": "2024-01-14T12:00:00Z",
+      "createdAt": "2024-01-11T10:00:00Z",
+      "description": "Pet Supplies - Dog Food",
+      "value": 89.99,
+      "requiresSignature": false,
+      "fragile": false,
+      "insurance": false,
+      "delayReason": "Weather conditions"
+    },
+    {
+      "id": "PKG-010",
+      "trackingNumber": "TRK123456798",
+      "sender": {
+        "name": "Jewelry Emporium",
+        "address": "159 Luxury Plaza, San Francisco, CA 94102",
+        "phone": "+1-415-555-1919"
+      },
+      "recipient": {
+        "name": "Amanda White",
+        "address": "753 Diamond Street, San Francisco, CA 94118",
+        "phone": "+1-415-555-2020"
+      },
+      "weight": 0.3,
+      "dimensions": {
+        "length": 12,
+        "width": 8,
+        "height": 5,
+        "unit": "cm"
+      },
+      "status": "out_for_delivery",
+      "priority": "high",
+      "serviceType": "express",
+      "estimatedDelivery": "2024-01-15T14:30:00Z",
+      "createdAt": "2024-01-14T06:00:00Z",
+      "description": "Jewelry - Engagement Ring",
+      "value": 5499.99,
+      "requiresSignature": true,
+      "fragile": true,
+      "insurance": true,
+      "highValue": true
+    },
+    {
+      "id": "PKG-011",
+      "trackingNumber": "TRK123456799",
+      "sender": {
+        "name": "Sports Equipment Store",
+        "address": "357 Athletic Avenue, San Francisco, CA 94107",
+        "phone": "+1-415-555-2121"
+      },
+      "recipient": {
+        "name": "James Wilson",
+        "address": "951 Fitness Drive, San Francisco, CA 94114",
+        "phone": "+1-415-555-2222"
+      },
+      "weight": 15.0,
+      "dimensions": {
+        "length": 100,
+        "width": 50,
+        "height": 20,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-17T16:00:00Z",
+      "createdAt": "2024-01-14T13:00:00Z",
+      "description": "Sports Equipment - Bicycle",
+      "value": 799.99,
+      "requiresSignature": true,
+      "fragile": false,
+      "insurance": true
+    },
+    {
+      "id": "PKG-012",
+      "trackingNumber": "TRK123456800",
+      "sender": {
+        "name": "Cosmetics Beauty",
+        "address": "468 Beauty Lane, San Francisco, CA 94106",
+        "phone": "+1-415-555-2323"
+      },
+      "recipient": {
+        "name": "Patricia Davis",
+        "address": "159 Glamour Street, San Francisco, CA 94116",
+        "phone": "+1-415-555-2424"
+      },
+      "weight": 1.5,
+      "dimensions": {
+        "length": 28,
+        "width": 22,
+        "height": 12,
+        "unit": "cm"
+      },
+      "status": "delivered",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-13T15:00:00Z",
+      "actualDelivery": "2024-01-13T14:20:00Z",
+      "createdAt": "2024-01-10T12:00:00Z",
+      "description": "Cosmetics - Skincare Set",
+      "value": 129.99,
+      "requiresSignature": false,
+      "fragile": true,
+      "insurance": false,
+      "deliveredTo": "Mailbox",
+      "deliveryNotes": "Delivered to mailbox"
+    },
+    {
+      "id": "PKG-013",
+      "trackingNumber": "TRK123456801",
+      "sender": {
+        "name": "Office Supplies Central",
+        "address": "741 Business Center, San Francisco, CA 94104",
+        "phone": "+1-415-555-2525"
+      },
+      "recipient": {
+        "name": "Christopher Moore",
+        "address": "852 Corporate Way, San Francisco, CA 94119",
+        "phone": "+1-415-555-2626"
+      },
+      "weight": 6.8,
+      "dimensions": {
+        "length": 55,
+        "width": 40,
+        "height": 35,
+        "unit": "cm"
+      },
+      "status": "pending",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-18T10:00:00Z",
+      "createdAt": "2024-01-14T15:00:00Z",
+      "description": "Office Supplies - Printer Paper",
+      "value": 79.99,
+      "requiresSignature": false,
+      "fragile": false,
+      "insurance": false
+    },
+    {
+      "id": "PKG-014",
+      "trackingNumber": "TRK123456802",
+      "sender": {
+        "name": "Musical Instruments Pro",
+        "address": "963 Music Street, San Francisco, CA 94120",
+        "phone": "+1-415-555-2727"
+      },
+      "recipient": {
+        "name": "Daniel Garcia",
+        "address": "147 Harmony Avenue, San Francisco, CA 94121",
+        "phone": "+1-415-555-2828"
+      },
+      "weight": 3.5,
+      "dimensions": {
+        "length": 70,
+        "width": 30,
+        "height": 15,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-16T13:00:00Z",
+      "createdAt": "2024-01-13T16:00:00Z",
+      "description": "Musical Instrument - Guitar Strings",
+      "value": 45.99,
+      "requiresSignature": false,
+      "fragile": true,
+      "insurance": false
+    },
+    {
+      "id": "PKG-015",
+      "trackingNumber": "TRK123456803",
+      "sender": {
+        "name": "Toy Store Express",
+        "address": "258 Playground Road, San Francisco, CA 94122",
+        "phone": "+1-415-555-2929"
+      },
+      "recipient": {
+        "name": "Maria Lopez",
+        "address": "369 Children's Way, San Francisco, CA 94123",
+        "phone": "+1-415-555-3030"
+      },
+      "weight": 2.0,
+      "dimensions": {
+        "length": 35,
+        "width": 25,
+        "height": 20,
+        "unit": "cm"
+      },
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "serviceType": "standard",
+      "estimatedDelivery": "2024-01-15T17:00:00Z",
+      "createdAt": "2024-01-12T13:00:00Z",
+      "description": "Toys - Educational Set",
+      "value": 59.99,
+      "requiresSignature": false,
+      "fragile": false,
+      "insurance": false
+    }
+  ]
+}
+

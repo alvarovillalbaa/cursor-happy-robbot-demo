@@ -1,0 +1,427 @@
+{
+  "routes": [
+    {
+      "id": "123",
+      "name": "SF Downtown Express Route",
+      "driverId": "DRV-001",
+      "vehicleId": "VEH-001",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "08:00",
+      "estimatedEndTime": "16:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-001",
+          "address": "456 Oak Street, Apt 3B, San Francisco, CA 94110",
+          "latitude": 37.7500,
+          "longitude": -122.4200,
+          "estimatedArrival": "2024-01-15T14:00:00Z",
+          "status": "pending"
+        }
+      ],
+      "totalDistance": 15.5,
+      "totalDuration": 480,
+      "currentLocation": {
+        "latitude": 37.7700,
+        "longitude": -122.4200,
+        "timestamp": "2024-01-15T10:30:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-002",
+      "name": "SF Mission District Route",
+      "driverId": "DRV-002",
+      "vehicleId": "VEH-002",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "12:00",
+      "estimatedEndTime": "20:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-002",
+          "address": "321 Pine Avenue, San Francisco, CA 94111",
+          "latitude": 37.7900,
+          "longitude": -122.4000,
+          "estimatedArrival": "2024-01-15T16:00:00Z",
+          "status": "in_progress"
+        }
+      ],
+      "totalDistance": 25.0,
+      "totalDuration": 480,
+      "currentLocation": {
+        "latitude": 37.7800,
+        "longitude": -122.4100,
+        "timestamp": "2024-01-15T14:20:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "heavy",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-003",
+      "name": "Berkeley Express Route",
+      "driverId": "DRV-003",
+      "vehicleId": "VEH-003",
+      "status": "completed",
+      "date": "2024-01-14",
+      "startTime": "08:00",
+      "estimatedEndTime": "15:00",
+      "actualEndTime": "14:30",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-003",
+          "address": "567 Elm Street, Berkeley, CA 94704",
+          "latitude": 37.8700,
+          "longitude": -122.2600,
+          "estimatedArrival": "2024-01-14T12:00:00Z",
+          "actualArrival": "2024-01-14T11:45:00Z",
+          "status": "completed"
+        }
+      ],
+      "totalDistance": 18.5,
+      "totalDuration": 390,
+      "actualDuration": 390,
+      "completedStops": 1,
+      "totalStops": 1,
+      "trafficConditions": "light",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-004",
+      "name": "Mountain View Medical Route",
+      "driverId": "DRV-003",
+      "vehicleId": "VEH-003",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "07:00",
+      "estimatedEndTime": "11:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-004",
+          "address": "123 Health Clinic, Mountain View, CA 94040",
+          "latitude": 37.4000,
+          "longitude": -122.1100,
+          "estimatedArrival": "2024-01-15T10:00:00Z",
+          "status": "in_progress"
+        }
+      ],
+      "totalDistance": 45.0,
+      "totalDuration": 240,
+      "currentLocation": {
+        "latitude": 37.4000,
+        "longitude": -122.1100,
+        "timestamp": "2024-01-15T09:15:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-005",
+      "name": "Sonoma County Route",
+      "driverId": "DRV-004",
+      "vehicleId": "VEH-004",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "13:00",
+      "estimatedEndTime": "18:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-006",
+          "address": "654 Wine Country Road, Sonoma, CA 95476",
+          "latitude": 38.2900,
+          "longitude": -122.4600,
+          "estimatedArrival": "2024-01-15T15:30:00Z",
+          "status": "in_progress"
+        }
+      ],
+      "totalDistance": 55.0,
+      "totalDuration": 300,
+      "currentLocation": {
+        "latitude": 38.2900,
+        "longitude": -122.4600,
+        "timestamp": "2024-01-15T14:45:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "light",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-006",
+      "name": "Menlo Park Express Route",
+      "driverId": "DRV-005",
+      "vehicleId": "VEH-005",
+      "status": "completed",
+      "date": "2024-01-14",
+      "startTime": "08:00",
+      "estimatedEndTime": "14:00",
+      "actualEndTime": "13:15",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-007",
+          "address": "147 Tech Park Drive, Menlo Park, CA 94025",
+          "latitude": 37.4500,
+          "longitude": -122.1800,
+          "estimatedArrival": "2024-01-14T13:00:00Z",
+          "actualArrival": "2024-01-14T12:30:00Z",
+          "status": "completed"
+        }
+      ],
+      "totalDistance": 35.0,
+      "totalDuration": 360,
+      "actualDuration": 315,
+      "completedStops": 1,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-007",
+      "name": "SF North Route",
+      "driverId": "DRV-006",
+      "vehicleId": "VEH-006",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "09:30",
+      "estimatedEndTime": "17:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-008",
+          "address": "369 Artist Lane, San Francisco, CA 94115",
+          "latitude": 37.7900,
+          "longitude": -122.4400,
+          "estimatedArrival": "2024-01-16T11:00:00Z",
+          "status": "pending"
+        }
+      ],
+      "totalDistance": 20.0,
+      "totalDuration": 450,
+      "currentLocation": {
+        "latitude": 37.7900,
+        "longitude": -122.4000,
+        "timestamp": "2024-01-15T11:00:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-008",
+      "name": "SF Central Delayed Route",
+      "driverId": "DRV-007",
+      "vehicleId": "VEH-007",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "08:00",
+      "estimatedEndTime": "16:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-009",
+          "address": "852 Pet Friendly Street, San Francisco, CA 94112",
+          "latitude": 37.7200,
+          "longitude": -122.4500,
+          "estimatedArrival": "2024-01-15T12:00:00Z",
+          "status": "pending",
+          "delayReason": "Weather conditions"
+        }
+      ],
+      "totalDistance": 12.0,
+      "totalDuration": 480,
+      "currentLocation": {
+        "latitude": 37.7600,
+        "longitude": -122.4300,
+        "timestamp": "2024-01-15T10:00:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "heavy",
+      "weatherConditions": "rainy",
+      "delay": true,
+      "delayDuration": 24
+    },
+    {
+      "id": "RT-009",
+      "name": "SF Luxury Express Route",
+      "driverId": "DRV-008",
+      "vehicleId": "VEH-008",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "06:00",
+      "estimatedEndTime": "15:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-010",
+          "address": "753 Diamond Street, San Francisco, CA 94118",
+          "latitude": 37.7800,
+          "longitude": -122.4600,
+          "estimatedArrival": "2024-01-15T14:30:00Z",
+          "status": "in_progress"
+        }
+      ],
+      "totalDistance": 18.0,
+      "totalDuration": 540,
+      "currentLocation": {
+        "latitude": 37.7800,
+        "longitude": -122.4200,
+        "timestamp": "2024-01-15T13:15:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-010",
+      "name": "SF Multi-Stop Route",
+      "driverId": "DRV-001",
+      "vehicleId": "VEH-001",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "08:30",
+      "estimatedEndTime": "17:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-001",
+          "address": "456 Oak Street, Apt 3B, San Francisco, CA 94110",
+          "latitude": 37.7500,
+          "longitude": -122.4200,
+          "estimatedArrival": "2024-01-15T14:00:00Z",
+          "status": "pending"
+        },
+        {
+          "sequence": 2,
+          "packageId": "PKG-011",
+          "address": "951 Fitness Drive, San Francisco, CA 94114",
+          "latitude": 37.7600,
+          "longitude": -122.4300,
+          "estimatedArrival": "2024-01-17T16:00:00Z",
+          "status": "pending"
+        }
+      ],
+      "totalDistance": 22.0,
+      "totalDuration": 510,
+      "currentLocation": {
+        "latitude": 37.7500,
+        "longitude": -122.4100,
+        "timestamp": "2024-01-15T11:30:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 2,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-011",
+      "name": "SF Marina Route",
+      "driverId": "DRV-002",
+      "vehicleId": "VEH-002",
+      "status": "completed",
+      "date": "2024-01-13",
+      "startTime": "12:00",
+      "estimatedEndTime": "18:00",
+      "actualEndTime": "17:30",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-012",
+          "address": "159 Glamour Street, San Francisco, CA 94116",
+          "latitude": 37.7600,
+          "longitude": -122.4400,
+          "estimatedArrival": "2024-01-13T15:00:00Z",
+          "actualArrival": "2024-01-13T14:20:00Z",
+          "status": "completed"
+        }
+      ],
+      "totalDistance": 16.0,
+      "totalDuration": 360,
+      "actualDuration": 330,
+      "completedStops": 1,
+      "totalStops": 1,
+      "trafficConditions": "light",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-012",
+      "name": "SF Mission Bay Route",
+      "driverId": "DRV-005",
+      "vehicleId": "VEH-005",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "09:00",
+      "estimatedEndTime": "16:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-014",
+          "address": "147 Harmony Avenue, San Francisco, CA 94121",
+          "latitude": 37.7800,
+          "longitude": -122.4500,
+          "estimatedArrival": "2024-01-16T13:00:00Z",
+          "status": "pending"
+        }
+      ],
+      "totalDistance": 14.0,
+      "totalDuration": 420,
+      "currentLocation": {
+        "latitude": 37.7700,
+        "longitude": -122.4150,
+        "timestamp": "2024-01-15T10:45:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    },
+    {
+      "id": "RT-013",
+      "name": "SF Sunset Route",
+      "driverId": "DRV-004",
+      "vehicleId": "VEH-004",
+      "status": "active",
+      "date": "2024-01-15",
+      "startTime": "13:00",
+      "estimatedEndTime": "19:00",
+      "waypoints": [
+        {
+          "sequence": 1,
+          "packageId": "PKG-015",
+          "address": "369 Children's Way, San Francisco, CA 94123",
+          "latitude": 37.8000,
+          "longitude": -122.4700,
+          "estimatedArrival": "2024-01-15T17:00:00Z",
+          "status": "in_progress"
+        }
+      ],
+      "totalDistance": 19.0,
+      "totalDuration": 360,
+      "currentLocation": {
+        "latitude": 37.7750,
+        "longitude": -122.4250,
+        "timestamp": "2024-01-15T15:30:00Z"
+      },
+      "completedStops": 0,
+      "totalStops": 1,
+      "trafficConditions": "moderate",
+      "weatherConditions": "clear"
+    }
+  ]
+}
+

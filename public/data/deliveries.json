@@ -1,0 +1,320 @@
+{
+  "deliveries": [
+    {
+      "id": "DLV-001",
+      "packageId": "PKG-001",
+      "driverId": "DRV-001",
+      "vehicleId": "VEH-001",
+      "routeId": "RT-001",
+      "status": "in_transit",
+      "priority": "express",
+      "assignedAt": "2024-01-15T08:00:00Z",
+      "pickedUpAt": "2024-01-15T08:30:00Z",
+      "estimatedDelivery": "2024-01-15T14:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7700,
+        "longitude": -122.4200,
+        "timestamp": "2024-01-15T10:30:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Express delivery - requires signature"
+    },
+    {
+      "id": "DLV-002",
+      "packageId": "PKG-002",
+      "driverId": "DRV-002",
+      "vehicleId": "VEH-002",
+      "routeId": "RT-002",
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T12:00:00Z",
+      "pickedUpAt": "2024-01-15T12:15:00Z",
+      "estimatedDelivery": "2024-01-15T16:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7800,
+        "longitude": -122.4100,
+        "timestamp": "2024-01-15T14:20:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Standard delivery"
+    },
+    {
+      "id": "DLV-003",
+      "packageId": "PKG-003",
+      "driverId": "DRV-003",
+      "vehicleId": "VEH-003",
+      "routeId": "RT-003",
+      "status": "delivered",
+      "priority": "standard",
+      "assignedAt": "2024-01-14T08:00:00Z",
+      "pickedUpAt": "2024-01-14T08:20:00Z",
+      "estimatedDelivery": "2024-01-14T12:00:00Z",
+      "actualDelivery": "2024-01-14T11:45:00Z",
+      "currentLocation": {
+        "latitude": 37.8700,
+        "longitude": -122.2600,
+        "timestamp": "2024-01-14T11:45:00Z"
+      },
+      "deliveryAttempts": 1,
+      "notes": "Delivered successfully - left at front door",
+      "deliveryProof": {
+        "signature": "Michael Chen",
+        "photo": "delivery_photo_dlv003.jpg",
+        "timestamp": "2024-01-14T11:45:00Z"
+      }
+    },
+    {
+      "id": "DLV-004",
+      "packageId": "PKG-004",
+      "driverId": "DRV-003",
+      "vehicleId": "VEH-003",
+      "routeId": "RT-004",
+      "status": "in_transit",
+      "priority": "high",
+      "assignedAt": "2024-01-15T07:00:00Z",
+      "pickedUpAt": "2024-01-15T07:15:00Z",
+      "estimatedDelivery": "2024-01-15T10:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.4000,
+        "longitude": -122.1100,
+        "timestamp": "2024-01-15T09:15:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Medical supplies - temperature controlled - requires signature",
+      "temperatureMonitoring": {
+        "current": 5,
+        "min": 2,
+        "max": 8,
+        "status": "normal"
+      }
+    },
+    {
+      "id": "DLV-005",
+      "packageId": "PKG-005",
+      "driverId": null,
+      "vehicleId": null,
+      "routeId": null,
+      "status": "pending",
+      "priority": "standard",
+      "assignedAt": null,
+      "pickedUpAt": null,
+      "estimatedDelivery": "2024-01-16T17:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": null,
+      "deliveryAttempts": 0,
+      "notes": "Awaiting assignment"
+    },
+    {
+      "id": "DLV-006",
+      "packageId": "PKG-006",
+      "driverId": "DRV-004",
+      "vehicleId": "VEH-004",
+      "routeId": "RT-005",
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T13:00:00Z",
+      "pickedUpAt": "2024-01-15T13:10:00Z",
+      "estimatedDelivery": "2024-01-15T15:30:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 38.2900,
+        "longitude": -122.4600,
+        "timestamp": "2024-01-15T14:45:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Perishable goods - handle with care"
+    },
+    {
+      "id": "DLV-007",
+      "packageId": "PKG-007",
+      "driverId": "DRV-005",
+      "vehicleId": "VEH-005",
+      "routeId": "RT-006",
+      "status": "delivered",
+      "priority": "high",
+      "assignedAt": "2024-01-14T08:00:00Z",
+      "pickedUpAt": "2024-01-14T08:15:00Z",
+      "estimatedDelivery": "2024-01-14T13:00:00Z",
+      "actualDelivery": "2024-01-14T12:30:00Z",
+      "currentLocation": {
+        "latitude": 37.4500,
+        "longitude": -122.1800,
+        "timestamp": "2024-01-14T12:30:00Z"
+      },
+      "deliveryAttempts": 1,
+      "notes": "High-value item - signed by recipient",
+      "deliveryProof": {
+        "signature": "David Kim",
+        "photo": "delivery_photo_dlv007.jpg",
+        "timestamp": "2024-01-14T12:30:00Z"
+      }
+    },
+    {
+      "id": "DLV-008",
+      "packageId": "PKG-008",
+      "driverId": "DRV-006",
+      "vehicleId": "VEH-006",
+      "routeId": "RT-007",
+      "status": "in_transit",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T09:30:00Z",
+      "pickedUpAt": "2024-01-15T09:45:00Z",
+      "estimatedDelivery": "2024-01-16T11:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7900,
+        "longitude": -122.4000,
+        "timestamp": "2024-01-15T11:00:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Fragile item - handle with care"
+    },
+    {
+      "id": "DLV-009",
+      "packageId": "PKG-009",
+      "driverId": "DRV-007",
+      "vehicleId": "VEH-007",
+      "routeId": "RT-008",
+      "status": "delayed",
+      "priority": "standard",
+      "assignedAt": "2024-01-14T08:00:00Z",
+      "pickedUpAt": "2024-01-14T08:10:00Z",
+      "estimatedDelivery": "2024-01-15T12:00:00Z",
+      "originalEstimatedDelivery": "2024-01-14T12:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7600,
+        "longitude": -122.4300,
+        "timestamp": "2024-01-15T10:00:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Delayed due to weather conditions",
+      "delayReason": "Weather conditions",
+      "delayDuration": 24
+    },
+    {
+      "id": "DLV-010",
+      "packageId": "PKG-010",
+      "driverId": "DRV-008",
+      "vehicleId": "VEH-008",
+      "routeId": "RT-009",
+      "status": "out_for_delivery",
+      "priority": "high",
+      "assignedAt": "2024-01-15T06:00:00Z",
+      "pickedUpAt": "2024-01-15T06:15:00Z",
+      "estimatedDelivery": "2024-01-15T14:30:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7800,
+        "longitude": -122.4200,
+        "timestamp": "2024-01-15T13:15:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "High-value jewelry - requires signature - express delivery"
+    },
+    {
+      "id": "DLV-011",
+      "packageId": "PKG-011",
+      "driverId": "DRV-001",
+      "vehicleId": "VEH-001",
+      "routeId": "RT-010",
+      "status": "in_transit",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T08:30:00Z",
+      "pickedUpAt": "2024-01-15T08:45:00Z",
+      "estimatedDelivery": "2024-01-17T16:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7500,
+        "longitude": -122.4100,
+        "timestamp": "2024-01-15T11:30:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Large item - bicycle - requires signature"
+    },
+    {
+      "id": "DLV-012",
+      "packageId": "PKG-012",
+      "driverId": "DRV-002",
+      "vehicleId": "VEH-002",
+      "routeId": "RT-011",
+      "status": "delivered",
+      "priority": "standard",
+      "assignedAt": "2024-01-13T12:00:00Z",
+      "pickedUpAt": "2024-01-13T12:15:00Z",
+      "estimatedDelivery": "2024-01-13T15:00:00Z",
+      "actualDelivery": "2024-01-13T14:20:00Z",
+      "currentLocation": {
+        "latitude": 37.7600,
+        "longitude": -122.4400,
+        "timestamp": "2024-01-13T14:20:00Z"
+      },
+      "deliveryAttempts": 1,
+      "notes": "Delivered to mailbox",
+      "deliveryProof": {
+        "photo": "delivery_photo_dlv012.jpg",
+        "timestamp": "2024-01-13T14:20:00Z"
+      }
+    },
+    {
+      "id": "DLV-013",
+      "packageId": "PKG-013",
+      "driverId": null,
+      "vehicleId": null,
+      "routeId": null,
+      "status": "pending",
+      "priority": "standard",
+      "assignedAt": null,
+      "pickedUpAt": null,
+      "estimatedDelivery": "2024-01-18T10:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": null,
+      "deliveryAttempts": 0,
+      "notes": "Awaiting assignment"
+    },
+    {
+      "id": "DLV-014",
+      "packageId": "PKG-014",
+      "driverId": "DRV-005",
+      "vehicleId": "VEH-005",
+      "routeId": "RT-012",
+      "status": "in_transit",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T09:00:00Z",
+      "pickedUpAt": "2024-01-15T09:15:00Z",
+      "estimatedDelivery": "2024-01-16T13:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7700,
+        "longitude": -122.4150,
+        "timestamp": "2024-01-15T10:45:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Fragile musical instrument supplies"
+    },
+    {
+      "id": "DLV-015",
+      "packageId": "PKG-015",
+      "driverId": "DRV-004",
+      "vehicleId": "VEH-004",
+      "routeId": "RT-013",
+      "status": "out_for_delivery",
+      "priority": "standard",
+      "assignedAt": "2024-01-15T13:00:00Z",
+      "pickedUpAt": "2024-01-15T13:10:00Z",
+      "estimatedDelivery": "2024-01-15T17:00:00Z",
+      "actualDelivery": null,
+      "currentLocation": {
+        "latitude": 37.7750,
+        "longitude": -122.4250,
+        "timestamp": "2024-01-15T15:30:00Z"
+      },
+      "deliveryAttempts": 0,
+      "notes": "Standard delivery"
+    }
+  ]
+}
+
