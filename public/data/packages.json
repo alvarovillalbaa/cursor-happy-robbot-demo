@@ -2,7 +2,7 @@
   "packages": [
     {
       "id": "123",
-      "trackingNumber": "TRK123456789",
+      "trackingNumber": "123",
       "sender": {
         "name": "TechCorp Solutions",
         "address": "123 Business Park, San Francisco, CA 94102",

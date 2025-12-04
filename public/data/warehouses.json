@@ -1,0 +1,146 @@
+{
+  "warehouses": [
+    {
+      "id": "WH-001",
+      "name": "San Francisco Main Distribution Center",
+      "code": "SFO-DC-01",
+      "address": {
+        "street": "1000 Industrial Boulevard",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94124",
+        "country": "USA"
+      },
+      "location": {
+        "latitude": 37.7500,
+        "longitude": -122.3800
+      },
+      "contact": {
+        "phone": "+1-415-555-5001",
+        "email": "warehouse.sfo@delivery.com",
+        "manager": "Robert Martinez"
+      },
+      "capacity": {
+        "totalArea": 50000,
+        "unit": "square_feet",
+        "storageCapacity": 10000,
+        "unitWeight": "cubic_meters",
+        "currentUtilization": 75
+      },
+      "operatingHours": {
+        "monday": "06:00-22:00",
+        "tuesday": "06:00-22:00",
+        "wednesday": "06:00-22:00",
+        "thursday": "06:00-22:00",
+        "friday": "06:00-22:00",
+        "saturday": "08:00-18:00",
+        "sunday": "closed"
+      },
+      "services": [
+        "package_sorting",
+        "temperature_controlled_storage",
+        "high_value_items",
+        "express_processing"
+      ],
+      "status": "operational",
+      "packagesInStock": 1250,
+      "packagesOutbound": 320,
+      "lastInventoryCheck": "2024-01-15T06:00:00Z"
+    },
+    {
+      "id": "WH-002",
+      "name": "Oakland Regional Hub",
+      "code": "OAK-HUB-02",
+      "address": {
+        "street": "2500 Port Avenue",
+        "city": "Oakland",
+        "state": "CA",
+        "zipCode": "94607",
+        "country": "USA"
+      },
+      "location": {
+        "latitude": 37.8000,
+        "longitude": -122.3000
+      },
+      "contact": {
+        "phone": "+1-510-555-5002",
+        "email": "warehouse.oak@delivery.com",
+        "manager": "Jennifer Chen"
+      },
+      "capacity": {
+        "totalArea": 35000,
+        "unit": "square_feet",
+        "storageCapacity": 7500,
+        "unitWeight": "cubic_meters",
+        "currentUtilization": 60
+      },
+      "operatingHours": {
+        "monday": "07:00-21:00",
+        "tuesday": "07:00-21:00",
+        "wednesday": "07:00-21:00",
+        "thursday": "07:00-21:00",
+        "friday": "07:00-21:00",
+        "saturday": "09:00-17:00",
+        "sunday": "closed"
+      },
+      "services": [
+        "package_sorting",
+        "bulk_storage",
+        "furniture_handling"
+      ],
+      "status": "operational",
+      "packagesInStock": 890,
+      "packagesOutbound": 185,
+      "lastInventoryCheck": "2024-01-15T06:30:00Z"
+    },
+    {
+      "id": "WH-003",
+      "name": "San Jose Express Center",
+      "code": "SJC-EXP-03",
+      "address": {
+        "street": "1500 Technology Drive",
+        "city": "San Jose",
+        "state": "CA",
+        "zipCode": "95110",
+        "country": "USA"
+      },
+      "location": {
+        "latitude": 37.3500,
+        "longitude": -121.9000
+      },
+      "contact": {
+        "phone": "+1-408-555-5003",
+        "email": "warehouse.sjc@delivery.com",
+        "manager": "David Kim"
+      },
+      "capacity": {
+        "totalArea": 28000,
+        "unit": "square_feet",
+        "storageCapacity": 6000,
+        "unitWeight": "cubic_meters",
+        "currentUtilization": 85
+      },
+      "operatingHours": {
+        "monday": "05:00-23:00",
+        "tuesday": "05:00-23:00",
+        "wednesday": "05:00-23:00",
+        "thursday": "05:00-23:00",
+        "friday": "05:00-23:00",
+        "saturday": "06:00-20:00",
+        "sunday": "08:00-18:00"
+      },
+      "services": [
+        "package_sorting",
+        "express_processing",
+        "medical_supplies",
+        "temperature_controlled_storage",
+        "overnight_processing"
+      ],
+      "status": "operational",
+      "packagesInStock": 2100,
+      "packagesOutbound": 450,
+      "lastInventoryCheck": "2024-01-15T05:00:00Z"
+    }
+  ]
+}
+
