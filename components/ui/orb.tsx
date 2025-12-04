@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useRef } from "react"
+import { useEffect, useMemo, useRef, useState, Suspense } from "react"
 import { useTexture } from "@react-three/drei"
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import * as THREE from "three"
@@ -38,30 +38,65 @@ export function Orb({
   getOutputVolume,
   className,
 }: OrbProps) {
+  const [mounted, setMounted] = useState(false)
+  const [hasWebGL, setHasWebGL] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    // Check WebGL support
+    try {
+      const canvas = document.createElement("canvas")
+      const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl")
+      setHasWebGL(!!gl)
+    } catch (e) {
+      setHasWebGL(false)
+    }
+  }, [])
+
+  if (!mounted || !hasWebGL) {
+    return (
+      <div className={className ?? "relative h-full w-full flex items-center justify-center"}>
+        <div className="h-32 w-32 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 opacity-50" />
+      </div>
+    )
+  }
+
   return (
     <div className={className ?? "relative h-full w-full"}>
-      <Canvas
-        resize={{ debounce: resizeDebounce }}
-        gl={{
-          alpha: true,
-          antialias: true,
-          premultipliedAlpha: true,
-        }}
+      <Suspense
+        fallback={
+          <div className="flex h-full w-full items-center justify-center">
+            <div className="h-32 w-32 animate-pulse rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 opacity-50" />
+          </div>
+        }
       >
-        <Scene
-          colors={colors}
-          colorsRef={colorsRef}
-          seed={seed}
-          agentState={agentState}
-          volumeMode={volumeMode}
-          manualInput={manualInput}
-          manualOutput={manualOutput}
-          inputVolumeRef={inputVolumeRef}
-          outputVolumeRef={outputVolumeRef}
-          getInputVolume={getInputVolume}
-          getOutputVolume={getOutputVolume}
-        />
-      </Canvas>
+        <Canvas
+          resize={{ debounce: resizeDebounce }}
+          gl={{
+            alpha: true,
+            antialias: true,
+            premultipliedAlpha: true,
+            failIfMajorPerformanceCaveat: false,
+          }}
+          onError={(error) => {
+            console.error("Canvas error:", error)
+          }}
+        >
+          <Scene
+            colors={colors}
+            colorsRef={colorsRef}
+            seed={seed}
+            agentState={agentState}
+            volumeMode={volumeMode}
+            manualInput={manualInput}
+            manualOutput={manualOutput}
+            inputVolumeRef={inputVolumeRef}
+            outputVolumeRef={outputVolumeRef}
+            getInputVolume={getInputVolume}
+            getOutputVolume={getOutputVolume}
+          />
+        </Canvas>
+      </Suspense>
     </div>
   )
 }
