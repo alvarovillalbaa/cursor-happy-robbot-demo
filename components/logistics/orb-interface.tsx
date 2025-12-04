@@ -21,6 +21,10 @@ export function OrbInterface({ useCase, onBack }: OrbInterfaceProps) {
   const config = useCaseConfig[useCase]
 
   const handleStartCall = () => {
+    // Initiate phone call to the AI agent
+    const phoneNumber = "+34911676409" // +34 911 67 64 09
+    window.location.href = `tel:${phoneNumber}`
+    
     setIsCallActive(true)
     setAgentState("listening")
     // Simulate voice interaction
