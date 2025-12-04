@@ -1,0 +1,35 @@
+{
+  "packages": [
+    {
+      "id": "123",
+      "trackingNumber": "123",
+      "sender": {
+        "name": "TechCorp Solutions",
+        "address": "123 Business Park, San Francisco, CA 94102",
+        "phone": "+1-415-555-0101"
+      },
+      "recipient": {
+        "name": "John Martinez",
+        "address": "456 Oak Street, Apt 3B, San Francisco, CA 94110",
+        "phone": "+1-415-555-0202"
+      },
+      "weight": 2.5,
+      "dimensions": {
+        "length": 30,
+        "width": 20,
+        "height": 15,
+        "unit": "cm"
+      },
+      "status": "in_transit",
+      "priority": "standard",
+      "serviceType": "express",
+      "estimatedDelivery": "2026-01-15T14:00:00Z",
+      "createdAt": "2025-12-12T08:30:00Z",
+      "description": "Electronics - Laptop",
+      "value": 1299.99,
+      "requiresSignature": true,
+      "fragile": true,
+      "insurance": true
+    }
+  ]
+}

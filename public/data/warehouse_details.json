@@ -1,0 +1,51 @@
+{
+  "warehouses": [
+    {
+      "id": "WH-001",
+      "name": "San Francisco Main Distribution Center",
+      "code": "SFO-DC-01",
+      "address": {
+        "street": "1000 Industrial Boulevard",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94124",
+        "country": "USA"
+      },
+      "location": {
+        "latitude": 37.75,
+        "longitude": -122.38
+      },
+      "contact": { 
+        "phone": "+1-415-555-5001",
+        "email": "warehouse.sfo@delivery.com",
+        "manager": "Robert Martinez"
+      },
+      "capacity": {
+        "totalArea": 50000,
+        "unit": "square_feet",
+        "storageCapacity": 10000,
+        "unitWeight": "cubic_meters",
+        "currentUtilization": 75
+      },
+      "operatingHours": {
+        "monday": "06:00-22:00",
+        "tuesday": "06:00-22:00",
+        "wednesday": "06:00-22:00",
+        "thursday": "06:00-22:00",
+        "friday": "06:00-22:00",
+        "saturday": "08:00-18:00",
+        "sunday": "closed"
+      },
+      "services": [
+        "package_sorting",
+        "temperature_controlled_storage",
+        "high_value_items",
+        "express_processing"
+      ],
+      "status": "operational",
+      "packagesInStock": 1250,
+      "packagesOutbound": 320,
+      "lastInventoryCheck": "2024-01-15T06:00:00Z"
+    }
+  ]
+}
