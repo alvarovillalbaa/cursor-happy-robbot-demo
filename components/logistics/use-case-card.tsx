@@ -13,7 +13,7 @@ export interface UseCaseCardProps {
   className?: string
 }
 
-const useCaseConfig: Record<
+export const useCaseConfig: Record<
   UseCaseType,
   {
     title: string
